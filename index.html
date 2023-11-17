@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Search for a city" class="search-form-bar" id="search-form-bar"
+                    required />
+                <input type="submit" value="Search" class="search-form-button" />
+            </form>
+        </header>
+
+        <main>
+
+            <h1 class="current-location-time">
+                <span class="currrent-city" id="currrent-city"></span>
+                <span class="current-time" id="time"></span>
+            </h1>
+
+            <div class="weather-data">
+                <div class="weather-details">
+                    <p>
+                        <span class="current-temperature" id="current-temperature"></span>
+                        <span class="current-temperature-unit-metric">
+                            °C
+                        </span>
+
+
+
+                    </p>
+
+                    <p class="weather-info-details">
+
+                        <img src="images/humidity.png" alt="humidity icon" class="humidity-icon" /> Humidity :
+                        <span class="weather-info" id="humidity">
+
+                        </span>
+                        <br />
+
+                        <img src="images/wind.png" alt="wind icon" class="wind-icon" /> Wind :
+                        <span class="weather-info" id="wind-speed">
+
+                        </span>
+                    </p>
+                </div>
+
+                <div class="current-weather">
+                    <div id="icon">
+
+                    </div>
+
+                    <div class="current-weather-condition" id="description">
+
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer>
+            This is coded by <a href="https://github.com/yoshino62" target="_blank">Yoshino</a> and is on <a
+                href="https://github.com/yoshino62/weather-application" target="_blank">Github</a> and hosted on <a
+                href="https://weather-application-project-plus.netlify.app/" target="_blank">Netlify</a>
+        </footer>
+
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+
+</html>
