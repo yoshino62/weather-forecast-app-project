@@ -131,6 +131,28 @@ main {
   font-weight: 500;
 }
 
+.weather-forecast {
+  margin-top: 30px;
+  text-align: center;
+  color: #809696;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+}
+
+.weather-forecast-temperature {
+  font-size: 16px;
+}
+
+.weather-forecast-temperature-max {
+  color: #fc6da5;
+}
+
+.weather-forecast-temperature-min {
+  color: #6d8efc;
+}
+
 footer {
   color: #9d9e9e;
   border-top: 1px solid #f0f7f7;
